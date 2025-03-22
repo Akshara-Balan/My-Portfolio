@@ -3,110 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"AKSHARA BALAN"</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Akshara Balan - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Page 1: Home -->
-        <section id="page1">
-            <div class="hero">
-                <img src="images\Profile Picture.jpeg" alt="Akshara Balan's Photo" class="profile-pic">
-                <h1>Arsha</h1>
-                <div class="nav-buttons">
-                    <button onclick="navigateTo('page2')">About Me</button>
-                    <button onclick="navigateTo('page3')">Education</button>
-                    <button onclick="navigateTo('page4')">Projects</button>
-                    <button onclick="navigateTo('page5')">Experience</button>
-                    <button onclick="navigateTo('page6')">Skills</button>
-                    <button onclick="navigateTo('page7')">Achievements</button>
-                    <button onclick="navigateTo('page8')">Connect</button>
+    <!-- Header with Resume Download -->
+    <header>
+        <a href="assets/Akshara_Balan_Resume.pdf" class="resume-btn" download><i class="fas fa-download"></i> Resume</a>
+    </header>
+
+    <!-- Home Section with Particles -->
+    <section id="home" class="full-page">
+        <canvas id="particles"></canvas>
+        <div class="home-content">
+            <img src="assets/images/Profile Picture.jpeg" alt="Akshara Balan" class="profile-img animate__fadeIn">
+            <h1 class="animate__bounceIn">Akshara Balan</h1>
+            <p class="subtitle animate__fadeInUp">AI & ML Enthusiast | Cybersecurity Explorer</p>
+            <nav class="tabs animate__fadeInUp">
+                <a href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#internships">Internships</a>
+                <a href="#skills">Skills</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact Me</a>
+            </nav>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="full-page">
+        <div class="container">
+            <h2 class="section-title animate__fadeInDown">About Me</h2>
+            <div class="content-box animate__fadeInUp">
+                <p>I'm a final-year Computer Science (Artificial Intelligence) student passionate about AI, Machine Learning, Cybersecurity, and Robotics. With hands-on experience in research and development, I've worked on projects that leverage AI for real-world impact, including facial recognition systems, Explainable AI in healthcare, and cybersecurity solutions.</p>
+                <p>Currently a student intern at ICFOSS, I explore innovative solutions in AI and NLP, driven by the mission to bridge the gap between technology and real-world applications, making AI more explainable, ethical, and impactful.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="full-page">
+        <div class="container">
+            <h2 class="section-title animate__fadeInDown">Projects</h2>
+            <div class="projects-grid">
+                <a href="https://github.com/Akshara-Balan/Facial-Recognition-License-Verification-System" target="_blank" class="project-card animate__zoomIn">
+                    <h3>Facial Recognition License Verification System</h3>
+                    <p>Developed a system to predict license details using facial recognition and ML.</p>
+                    <span>Tech: Python, Naive Bayes</span>
+                </a>
+                <a href="https://github.com/Akshara-Balan/Kidney-transplantation-using-Explainable-AI" target="_blank" class="project-card animate__zoomIn" style="animation-delay: 0.2s;">
+                    <h3>Kidney Transplantation using Explainable AI</h3>
+                    <p>Enhanced transplant outcomes using XAI with Random Forest and Gradient Boosting.</p>
+                    <span>Tech: Python, Random Forest</span>
+                </a>
+                <a href="https://github.com/Akshara-Balan/PIA-Detection-System-using-Explainable-AI" target="_blank" class="project-card animate__zoomIn" style="animation-delay: 0.4s;">
+                    <h3>Prompt Injection Attack Detection System</h3>
+                    <p>Building a system to detect prompt injection attacks using ML (Ongoing).</p>
+                    <span>Tech: Python, ML</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section id="internships" class="full-page">
+        <div class="container">
+            <h2 class="section-title animate__fadeInDown">Internships</h2>
+            <div class="internships-grid">
+                <div class="internship-card animate__fadeInUp">
+                    <h3>ICFOSS - LT/ML Intern</h3>
+                    <p>Dec 2024 - Present | Contributing to free and open source solutions</p>
+                </div>
+                <div class="internship-card animate__fadeInUp" style="animation-delay: 0.2s;">
+                    <h3>FaceIn - Cybersecurity and Ethical Hacking</h3>
+                    <p>May 2023 | Worked on cybersecurity projects</p>
+                </div>
+                <div class="internship-card animate__fadeInUp" style="animation-delay: 0.4s;">
+                    <h3>Project Ganitham - Social Work Intern</h3>
+                    <p>Aug 2024 | Taught mathematics to 9th and 10th graders</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Page 2: About Me -->
-        <section id="page2" class="hidden">
-            <h1>About Me (She/Yes)</h1>
-            <p>Final-year Computer Science (Artificial Intelligence) student passionate about Artificial Intelligence, Machine Learning, Cybersecurity, and Robotics.</p>
-            <p>With hands-on experience in research and development, I have worked on projects that leverage AI for real-world impact, including racial recognition systems, Explainable AI in healthcare, and cybersecurity solutions.</p>
-            <p>Beyond technical expertise, I have demonstrated strong leadership skills. I have also contributed as a resource person for online sessions, an IEEEpublished research, and event coordinator.</p>
-            <p>Currently, I am a student intern at ICFOSS, where I continue to explore innovative solutions in AI and NLP. I am driven by the mission to bridge the gap between technology and real-world applications, making AI more explainable, ethical, and impactful.</p>
-            <button class="back-btn" onclick="navigateTo('page1')">← Back</button>
-        </section>
-
-        <!-- Page 3: Education -->
-        <section id="page3" class="hidden">
-            <h1>Education</h1>
-            <div class="education-item">
-                <p><strong>BTECH</strong><br>2021-25<br>APJ Abdul Kalam Technological University<br>Adi Shankara Institute of Engineering and Technology<br>BTech in Computer Engineering (Artificial Intelligence)<br>CGPA: 8.47</p>
-                <p><strong>Roles and Responsibilities:</strong><br>- President | AI Club | 2023-24<br>- Campus co-lead | Game Development Club | 2023-25<br>- NRPF Student Coordinator | 2023-24<br>- Design Lead | HackClub | 2022-24</p>
+    <!-- Skills Section -->
+    <section id="skills" class="full-page">
+        <div class="container">
+            <h2 class="section-title animate__fadeInDown">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item animate__flipInX">Python</div>
+                <div class="skill-item animate__flipInX" style="animation-delay: 0.2s;">Machine Learning</div>
+                <div class="skill-item animate__flipInX" style="animation-delay: 0.4s;">Cybersecurity</div>
+                <div class="skill-item animate__flipInX" style="animation-delay: 0.6s;">SQL</div>
+                <div class="skill-item animate__flipInX" style="animation-delay: 0.8s;">Jupyter Notebook</div>
+                <div class="skill-item animate__flipInX" style="animation-delay: 1s;">Leadership</div>
             </div>
-            <div class="education-item">
-                <p><strong>HIGHER SECONDARY</strong><br>2019-21<br>Higher Secondary Education<br>Chattanchal Higher Secondary School<br>PCWB (Bio Maths)<br>%: 96</p>
-            </div>
-            <div class="education-item">
-                <p><strong>HIGH SCHOOL</strong><br>2018<br>Council for the Indian School Certificate Examinations (CISCE)<br>Biology Science<br>%: 88.8<br><strong>Roles and Responsibilities:</strong><br>- CCA Vice Captain | School Council | 2018</p>
-            </div>
-            <button class="back-btn" onclick="navigateTo('page1')">← Back</button>
-        </section>
+        </div>
+    </section>
 
-        <!-- Page 4: Projects -->
-        <section id="page4" class="hidden">
-            <h1>Projects</h1>
-            <ul>
-                <li>EXPLAINABLE AI RECRUITER AGENCY</li>
-                <li>REVOLUTIONIZING KIDNEY TRANSPLANTS</li>
-                <li>PROMPT INJECTION ATTACK DETECTION SYSTEM USING EXPLAINABLE AI</li>
-                <li>FACIAL RECOGNITION LICENSE VERIFICATION SYSTEM</li>
-            </ul>
-            <button class="back-btn" onclick="navigateTo('page1')">← Back</button>
-        </section>
-
-        <!-- Page 5: Experience -->
-        <section id="page5" class="hidden">
-            <h1>Experience</h1>
-            <div class="experience-item">
-                <p><strong>International Centre for Free and Open Source Solutions, Thiruvananthapuram</strong><br>Contributing to free and open source solutions<br>December 2024 - Present</p>
+    <!-- Achievements Section -->
+    <section id="achievements" class="full-page">
+        <div class="container">
+            <h2 class="section-title animate__fadeInDown">Achievements</h2>
+            <div class="achievements-container">
+                <div class="achievement-row animate__fadeInLeft">
+                    <div class="achievement-box left-box">SELECTED FOR INTERNSHIP AT ICFOSS IN LANGUAGE TECHNOLOGY AND MACHINE LEARNING</div>
+                    <div class="achievement-box right-box">PUBLISHED AN IEEE PAPER ON REVOLUTIONIZING KIDNEY TRANSPLANTS USING XAI</div>
+                </div>
+                <div class="achievement-row animate__fadeInLeft" style="animation-delay: 0.2s;">
+                    <div class="achievement-box left-box">RESOURCE PERSON | AI.101 - AN ONLINE SESSION ON BASICS OF ARTIFICIAL INTELLIGENCE | 2024</div>
+                    <div class="achievement-box right-box">PRESENTED KIDNEY TRANSPLANT PROJECT AT THE 11TH ICACCO CONFERENCE</div>
+                </div>
+                <div class="achievement-row animate__fadeInLeft" style="animation-delay: 0.4s;">
+                    <div class="achievement-box left-box">PARTICIPATED IN ONLINE PROJECT PRESENTATION | PENCILBITZ ACADEMY</div>
+                    <div class="achievement-box right-box">RESOURCE PERSON | ML CRAZE - AN ONLINE HANDS-ON SESSION ON MACHINE LEARNING | 2024</div>
+                </div>
+                <div class="achievement-row animate__fadeInLeft" style="animation-delay: 0.6s;">
+                    <div class="achievement-box left-box"></div>
+                    <div class="achievement-box right-box">KTU D-ZONE WOMEN'S VOLLEYBALL RUNNER-UP | 2022</div>
+                </div>
             </div>
-            <div class="experience-item">
-                <p><strong>Cybersecurity and Ethical Hacking</strong><br>FACEIN (Federal Academy of Cyber Education) Technologies, Kochi<br>May 2023</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="full-page">
+        <div class="container">
+            <h2 class="section-title animate__fadeInDown">Education</h2>
+            <div class="education-grid">
+                <div class="education-card animate__fadeInUp">
+                    <h3>BTech in Computer Science (AI)</h3>
+                    <p>2021-2025 | APJ Abdul Kalam Technological University | CGPA: 8.47</p>
+                </div>
+                <div class="education-card animate__fadeInUp" style="animation-delay: 0.2s;">
+                    <h3>Higher Secondary</h3>
+                    <p>2019-2021 | Chattanchal Higher Secondary School | 96%</p>
+                </div>
+                <div class="education-card animate__fadeInUp" style="animation-delay: 0.4s;">
+                    <h3>High School</h3>
+                    <p>2018 | CISCE | 88.8%</p>
+                </div>
             </div>
-            <div class="experience-item">
-                <p><strong>Social Work Intern</strong><br>Project Ganitham Insight for Innovation Enlightening Education of Thrithala Panchayat.<br>Taught the students of 9th and 10th mathematics<br>August 2024</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="full-page">
+        <div class="container">
+            <h2 class="section-title animate__fadeInDown">Contact Me</h2>
+            <div class="contact-info animate__fadeInUp">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:aksharabalan0704@gmail.com">aksharabalan0704@gmail.com</a></p>
+                <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/akshara-balan-1213b1334" target="_blank">linkedin.com/in/akshara-balan</a></p>
+                <p><i class="fab fa-github"></i> <a href="https://github.com/Akshara-Balan" target="_blank">github.com/Akshara-Balan</a></p>
             </div>
-            <button class="back-btn" onclick="navigateTo('page1')">← Back</button>
-        </section>
+        </div>
+    </section>
 
-        <!-- Page 6: Skills -->
-        <section id="page6" class="hidden">
-            <h1>Skill Set</h1>
-            <p>[Skills to be added]</p>
-            <button class="back-btn" onclick="navigateTo('page1')">← Back</button>
-        </section>
-
-        <!-- Page 7: Achievements -->
-        <section id="page7" class="hidden">
-            <h1>Achievements</h1>
-            <ul>
-                <li>PUBLISHED AN IEEE PAPER ON REVOLUTIONIZING KIDNEY TRANSPLANTS USING XAI</li>
-                <li>SELECTED FOR INTERNSHIP AT ICFOSS IN LANGUAGE TECHNOLOGY AND MACHINE LEARNING</li>
-                <li>RESOURCE PERSON | AI.101- AN ONLINE SESSION ON BASICS OF ARTIFICIAL INTELLIGENCE | 2024</li>
-                <li>PARTICIPATED IN ONLINE PROJECT PRESENTATION | PENCILBIT ACADEMY</li>
-                <li>RESOURCE PERSON | ML CRAZE- AN ONLINE HANDSON SESSION ON MACHINE LEARNING | 2024</li>
-                <li>KTU ZONE WOMEN'S VOLLEYBALL RUNNER-UP | 2022</li>
-            </ul>
-            <button class="back-btn" onclick="navigateTo('page1')">← Back</button>
-        </section>
-
-        <!-- Page 8: Connect -->
-        <section id="page8" class="hidden">
-            <h1>Connect with me</h1>
-            <p><span class="symbol" onclick="window.open('https://github.com/aksharabatan', '_blank')">(1)</span> aksharabatan | 2025</p>
-            <button class="back-btn" onclick="navigateTo('page1')">← Back</button>
-        </section>
-    </div>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
