@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"AKSHARA BALAN"</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Page 1: Home -->
+        <section id="page1">
+            <div class="hero">
+                <img src="images\Profile Picture.jpeg" alt="Akshara Balan's Photo" class="profile-pic">
+                <h1>Arsha</h1>
+                <div class="nav-buttons">
+                    <button onclick="navigateTo('page2')">About Me</button>
+                    <button onclick="navigateTo('page3')">Education</button>
+                    <button onclick="navigateTo('page4')">Projects</button>
+                    <button onclick="navigateTo('page5')">Experience</button>
+                    <button onclick="navigateTo('page6')">Skills</button>
+                    <button onclick="navigateTo('page7')">Achievements</button>
+                    <button onclick="navigateTo('page8')">Connect</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 2: About Me -->
+        <section id="page2" class="hidden">
+            <h1>About Me (She/Yes)</h1>
+            <p>Final-year Computer Science (Artificial Intelligence) student passionate about Artificial Intelligence, Machine Learning, Cybersecurity, and Robotics.</p>
+            <p>With hands-on experience in research and development, I have worked on projects that leverage AI for real-world impact, including racial recognition systems, Explainable AI in healthcare, and cybersecurity solutions.</p>
+            <p>Beyond technical expertise, I have demonstrated strong leadership skills. I have also contributed as a resource person for online sessions, an IEEEpublished research, and event coordinator.</p>
+            <p>Currently, I am a student intern at ICFOSS, where I continue to explore innovative solutions in AI and NLP. I am driven by the mission to bridge the gap between technology and real-world applications, making AI more explainable, ethical, and impactful.</p>
+            <button class="back-btn" onclick="navigateTo('page1')">← Back</button>
+        </section>
+
+        <!-- Page 3: Education -->
+        <section id="page3" class="hidden">
+            <h1>Education</h1>
+            <div class="education-item">
+                <p><strong>BTECH</strong><br>2021-25<br>APJ Abdul Kalam Technological University<br>Adi Shankara Institute of Engineering and Technology<br>BTech in Computer Engineering (Artificial Intelligence)<br>CGPA: 8.47</p>
+                <p><strong>Roles and Responsibilities:</strong><br>- President | AI Club | 2023-24<br>- Campus co-lead | Game Development Club | 2023-25<br>- NRPF Student Coordinator | 2023-24<br>- Design Lead | HackClub | 2022-24</p>
+            </div>
+            <div class="education-item">
+                <p><strong>HIGHER SECONDARY</strong><br>2019-21<br>Higher Secondary Education<br>Chattanchal Higher Secondary School<br>PCWB (Bio Maths)<br>%: 96</p>
+            </div>
+            <div class="education-item">
+                <p><strong>HIGH SCHOOL</strong><br>2018<br>Council for the Indian School Certificate Examinations (CISCE)<br>Biology Science<br>%: 88.8<br><strong>Roles and Responsibilities:</strong><br>- CCA Vice Captain | School Council | 2018</p>
+            </div>
+            <button class="back-btn" onclick="navigateTo('page1')">← Back</button>
+        </section>
+
+        <!-- Page 4: Projects -->
+        <section id="page4" class="hidden">
+            <h1>Projects</h1>
+            <ul>
+                <li>EXPLAINABLE AI RECRUITER AGENCY</li>
+                <li>REVOLUTIONIZING KIDNEY TRANSPLANTS</li>
+                <li>PROMPT INJECTION ATTACK DETECTION SYSTEM USING EXPLAINABLE AI</li>
+                <li>FACIAL RECOGNITION LICENSE VERIFICATION SYSTEM</li>
+            </ul>
+            <button class="back-btn" onclick="navigateTo('page1')">← Back</button>
+        </section>
+
+        <!-- Page 5: Experience -->
+        <section id="page5" class="hidden">
+            <h1>Experience</h1>
+            <div class="experience-item">
+                <p><strong>International Centre for Free and Open Source Solutions, Thiruvananthapuram</strong><br>Contributing to free and open source solutions<br>December 2024 - Present</p>
+            </div>
+            <div class="experience-item">
+                <p><strong>Cybersecurity and Ethical Hacking</strong><br>FACEIN (Federal Academy of Cyber Education) Technologies, Kochi<br>May 2023</p>
+            </div>
+            <div class="experience-item">
+                <p><strong>Social Work Intern</strong><br>Project Ganitham Insight for Innovation Enlightening Education of Thrithala Panchayat.<br>Taught the students of 9th and 10th mathematics<br>August 2024</p>
+            </div>
+            <button class="back-btn" onclick="navigateTo('page1')">← Back</button>
+        </section>
+
+        <!-- Page 6: Skills -->
+        <section id="page6" class="hidden">
+            <h1>Skill Set</h1>
+            <p>[Skills to be added]</p>
+            <button class="back-btn" onclick="navigateTo('page1')">← Back</button>
+        </section>
+
+        <!-- Page 7: Achievements -->
+        <section id="page7" class="hidden">
+            <h1>Achievements</h1>
+            <ul>
+                <li>PUBLISHED AN IEEE PAPER ON REVOLUTIONIZING KIDNEY TRANSPLANTS USING XAI</li>
+                <li>SELECTED FOR INTERNSHIP AT ICFOSS IN LANGUAGE TECHNOLOGY AND MACHINE LEARNING</li>
+                <li>RESOURCE PERSON | AI.101- AN ONLINE SESSION ON BASICS OF ARTIFICIAL INTELLIGENCE | 2024</li>
+                <li>PARTICIPATED IN ONLINE PROJECT PRESENTATION | PENCILBIT ACADEMY</li>
+                <li>RESOURCE PERSON | ML CRAZE- AN ONLINE HANDSON SESSION ON MACHINE LEARNING | 2024</li>
+                <li>KTU ZONE WOMEN'S VOLLEYBALL RUNNER-UP | 2022</li>
+            </ul>
+            <button class="back-btn" onclick="navigateTo('page1')">← Back</button>
+        </section>
+
+        <!-- Page 8: Connect -->
+        <section id="page8" class="hidden">
+            <h1>Connect with me</h1>
+            <p><span class="symbol" onclick="window.open('https://github.com/aksharabatan', '_blank')">(1)</span> aksharabatan | 2025</p>
+            <button class="back-btn" onclick="navigateTo('page1')">← Back</button>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
